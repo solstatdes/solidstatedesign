@@ -60,8 +60,6 @@
         <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
         <ul id="main-menu">
-          <li id="menu-item-text" class="menu-item scroll"><a href="#text">About</a></li>
-          <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Featured</a></li>
           <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
         </ul><!-- #main-menu -->
 
@@ -78,158 +76,15 @@
                   <h1>Attractive, functional websites for scientific communities</h1>
                   <p>From personal scientific portfolios to database driven conference and project sites.</p>
                   <p><strong>Solid State Design</strong> create bespoke, responsive websites for people in science and academia.</p>
+                  <!--
                   <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
+                  -->
                 </section>
 
             </div><!-- .col-sm-10 -->
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
 
-        <article id="text" class="section-wrapper clearfix" data-custom-background-img="{% static 'images/other_images/bg7.jpg' %}">
-          <div class="content-wrapper clearfix">
-            <div class="col-sm-10 col-md-9 pull-right">
-
-                <h1 class="section-title">About</h1>
-
-                <p class="feature-paragraph"><strong>Solid State Design</strong> is Dr. Rob Treharne. A working physicist with an eye for design and a thirst for code. </p>
-                <p>Rob has a PhD in Renewable Energy and a background in Photovoltaics. He founded Solid State Design this year and is on the hunt for interesting and technical web projects that will further hone  his skills and portfolio.</p>
-            </div><!-- .col-sm-10 -->
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
-
-
-
-        <article id="featured" class="section-wrapper clearfix" data-custom-background-img="{% static 'images/other_images/bg9.jpg' %}">
-          <div class="content-wrapper clearfix">
-            <div class="col-sm-11 pull-right">
-
-                <h1 class="section-title">Featured</h1>
-              
-                <!-- feature columns -->
-                <section class="feature-columns row clearfix">
-
-                  <!-- feature 1 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="{% static 'images/other_images/cdt-pv.jpg' %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>CDT-PV</h5>
-                        <p>A responsive, database driven project site for the Centre for Doctoral Training in New and Sustainable Photovoltaics.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
-
-                    <div class="content-to-populate-in-modal" id="modal-content-6">
-                      <h1><a href="http://www.cdt-pv.org" target="_blank">cdt-pv.org</a></h1>
-                      <p>A responsive, database driven project site for the Centre for Doctoral Training in New and Sustainable Photovoltaics.</p>
-
-                      <!-- image slider inside popup -->
-                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                        <!-- slide -->
-                        <div>
-                          <!-- caption is optional. To remove it, remove the <h6> below -->
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/cdt-pv-1.jpg' %}">
-                      <p>Student/staff directory and user managed portfolios.</p>
-                    </div>
-                    <!-- slide -->
-                    <div>
-                      <img class="lazyOwl" data-src="{% static 'images/other_images/cdt-pv-2.jpg' %}">
-                      <p>Create training module pages, upade and manage traing resources.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/cdt-pv-3.jpg' %}">
-                          <p>Students submit assessments and receive direct feedback from academics via the site.</p>
-                        </div>
-                      </div>
-                    </div><!-- #modal-content-6 -->
-                  </article>
-                  
-                  <!-- feature 2 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="{% static 'images/other_images/pvsat.jpg' %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>PVSAT</h5>
-                      <p>A conference site for the UK Solar Energy Society and their PVSAT conference hosted at University of Liverpool in 2016.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
-
-                    <div class="content-to-populate-in-modal" id="modal-content-7">
-                      <h1><a href="http://www.pvsat.org.uk" target="_bank">pvsat.org.uk</a></h1>
-                      <p>A conference site for the UK Solar Energy Society and the PVSAT conference, hosted at University of Liverpool April 2016.</p>
-
-                      <!-- image slider inside popup -->
-                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                        <!-- slide -->
-                        <div>
-                          <!-- caption is optional. To remove it, remove the <h6> below -->
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/pvsat-2.jpg' %}">
-                          <p>Digital abstract and paper submissions for authors via site login portal.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/pvsat-3.jpg' %}">
-                          <p>Dynamically generated, interatctive conference proceedings. Your delegate's can access and follow a speaker's presentation and paper in real time.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/pvsat-4.jpg' %}">
-                          <p>Administrator can update the site with information on venue/events at will without the need for a webmonkey.</p>
-                        </div>
-                      </div>
-                    </div><!-- #modal-content-6 -->
-                  </article>
-
-
-                  <!-- feature 3 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="{% static 'images/other_images/solar-challenge.jpg' %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>Graphic Design</h5>
-                        <p>Nothing beats a good logo. Here are a few that were designed by Solid State.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
-
-                    <div class="content-to-populate-in-modal" id="modal-content-8">
-                      <h1>Graphic Design</h1>
-                      <p>I love designing logos. To me, there is nothing more satisying than a simple but elegant logo. Here are a few recent examples.</p>
-                      <!-- image slider inside popup -->
-                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                        <!-- slide -->
-                        <div>
-                          <!-- caption is optional. To remove it, remove the <h6> below -->
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-1.jpg' %}">
-                          <p><a href="http://www.rsasolarchallenge.org" target="_blank">RSA Solar Challenge</a>. This one looks great on a grey background and is perfect for round badges and stickers.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-2.jpg' %}">
-                          <p>Logo for <a href="http://www.cdt-pv.org" target="_blank">CDT-PV</a>. This one has been particularly popular - as well as the cdt-pv.org website, this logo has been used it on mugs, T-shirts, pens, pads, banners and posters. It is well known around the University of Liverpool campus.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-3.jpg' %}">
-                          <p>Sometimes you just want simple. This one took just over an hour to get right.</p>
-                        </div>
-                      </div>
-                    </div><!-- #modal-content-7 -->
-                  </article>
-
-
-                </section><!-- end: .feature-columns -->
-
-              <!-- End: Section content to edit -->
-
-            </div><!-- .col-sm-10 -->
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
 
         <article id="contact" class="section-wrapper clearfix" data-custom-background-img="{% static 'images/other_images/bg10.jpg' %}">
           <div class="content-wrapper clearfix">
