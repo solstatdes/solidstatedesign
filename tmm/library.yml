@@ -1,0 +1,32 @@
+# this file is part of refractiveindex.info database
+# refractiveindex.info database is in the public domain
+# copyright and related rights waived via CC0 1.0
+
+- SHELF: main
+  name: "MAIN - simple inorganic materials"
+  content:
+    - DIVIDER: "Ag - Silver"
+    - BOOK: Ag
+      name: "Ag (Silver)"
+      content:
+        - PAGE: Rakic
+          name: "Rakić 1998: n,k 0.2066-12.40 µm"
+          path: "main/Ag/Rakic.yml"
+        - PAGE: McPeak
+          name: "McPeak et al. 2015: Thin film; n,k 0.3-1.7 µm"
+          path: "main/Ag/McPeak.yml"  
+        - PAGE: Stahrenberg
+          name: "Stahrenberg et al. 2001: n,k 0.128-0.496 µm"
+          path: "main/Ag/Stahrenberg.yml"
+        - PAGE: Babar
+          name: "Babar and Weaver 2015: n,k 0.2066-12.40 µm"
+          path: "main/Ag/Babar.yml"
+        - PAGE: Hagemann
+          name: "Hagemann et al. 1974: n,k 2.48e-6-248 µm"
+          path: "main/Ag/Hagemann.yml"
+        - PAGE: Johnson
+          name: "Johnson and Christy 1972: n,k 0.188-1.937 µm"
+          path: "main/Ag/Johnson.yml"
+        - PAGE: Windt
+          name: "Windt et al. 1988: n,k 0.0024-0.1216 µm"
+          path: "main/Ag/Windt.yml"

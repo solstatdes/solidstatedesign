@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tmm',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -93,4 +94,6 @@ STATIC_PATH = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
     STATIC_PATH,
     )
+
+LIBRARY_PATH = os.path.join(STATIC_PATH, 'refractiveindex/database/')
 
