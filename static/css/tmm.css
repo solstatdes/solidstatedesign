@@ -1,0 +1,59 @@
+ul.stack-list {
+    text-align: left;
+}
+
+a.film-operation {
+    cursor: pointer;
+}
+
+.subfolder .subfolder, .subfolder .subfolder .subfolder {
+    display: none;
+}
+
+.subfolder{
+    cursor:pointer;
+}
+
+
+p.level1 {
+    font-size: 1.3em;
+}
+
+p.level2 {font-size: 1.1em;}
+p.level3 {font-size: 0.9em;}
+p.level4 {font-size: 0.5em;}
+
+.full-wrapper {
+    text-align: right;
+}
+
+section.output-text p {
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+.searchbox {
+    padding:17px;padding-left:55px;width:300px;border:1px solid #f5f5f5;
+    font-size:13px;color:black;
+    background-image:url('http://i47.tinypic.com/r02vbq.png');
+    background-repeat:no-repeat;
+    background-position:left center;outline:0;
+}
+
+#library-list, #lib-page {
+    max-height: 550px;
+    overflow-y:auto;
+    overflow-x:none;
+}
+.layer {
+    cursor: pointer;
+}
+.highlight {
+    font-weight: bold;
+}

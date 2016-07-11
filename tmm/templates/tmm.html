@@ -1,0 +1,150 @@
+{% extends "skylark-base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#banner">
+                <p>Skylark Optics</p>
+            </a> 
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#stack-box">stack</a>
+                </li>
+                <li>
+                    <a href="#library-box">library</a>
+                </li>
+                <li>
+                    <a href="#">feedback</a>
+                </li>
+                <li>
+                    <a href="#">tutorial</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container head">
+    <div class="row" id="banner">
+        <div class="col-lg-10 col-lg-offset-1">
+            <img class="logo" src="{% static 'images/skylark/logo.png' %}">
+        </div>
+    </div>
+</div>
+
+<div class="container" id="stack-box">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+
+            <div class="col-sm-9" id='out-page-chart'></div>
+            <div class="col-sm-3">
+            <br/>
+                <p class="stack-func">
+                    <a href="javascript: moveFilm(project, layerId, 'up')">up</a> &middot
+                    <a href="javascript: moveFilm(project, layerId, 'down')">down</a> &middot
+                    <a href="javascript: copyFilm(project, layerId, 'deep')">copy</a> &middot
+                    <a href="javascript: copyFilm(project, layerId, 'shallow')">clone</a> &middot
+                    <a href="javascript: deleteFilm(project, layerId)">delete</a> 
+                <p>
+
+                <ul class="stack-list list-unstyled" id="stack">
+                </ul>
+
+            <form method="POST" id="save-form" name="{{project.pk}}">
+                {% csrf_token %}
+                <div>
+                </div>
+                <!--
+                <input type="submit" class="link-scroll btn btn-outline-inverse btn-lg" value="Save">
+                -->
+            </form>
+            </div>
+                <input
+                    name=Slider
+                    type="range"
+                    max="1000"                  // default 100
+                    step="1"                   // default 1
+                >
+            <div>
+            </div>
+
+        </div>
+    </div>
+<div>
+
+<div class="container" id="library-box">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+            <div id="library-search">
+                <div class="form-group" >
+                    <form method="post" id="search-form">
+                        <input type="text" style="max-width: 300px" id="search-text" class="text-field form-control validate-field required searchbox" data-validation-type="string" id="form-name" placeholder="" name="name">
+                     </form>
+                </div>  
+            </div>
+
+            <div class="col-md-5" id="library-list">
+                <button type="submit" id="browse" class="btn btn-sm btn-outline-inverse">Browse</button>
+            </div>
+
+            <div class="col-md-7">
+                <div class="col-lg-12" id="lib-page">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+    <script src="{% static 'js/tmm.js' %}"></script>
+    <script src="{% static 'js/plot.js' %}"></script>
+    <script src="{% static 'js/ajax.js' %}"></script>
+
+    <script>
+    //initiate
+    var library = parseJSON("{{library}}");
+
+
+    var html  = parseLibrary(library);
+    $('#library-list').html(html);
+    var libpage = new Object();
+    //const project = new Stack(config);
+    var project = new Stack(parseJSON("{{project.json}}"), parseJSON("{{N}}"));
+    var layerId = null;
+    listStack(project.config);
+    var layerD = null;
+    plotTR(project.T, 'TR', 'out-page-chart');
+    var flag = false;
+
+    x = 0;
+    $(document).ready(function(){
+        $(window).resize(function(){
+            if (libpage.data != null) {
+                plot();
+            }
+
+        });
+    });
+    </script>
+
+{% endblock %}
