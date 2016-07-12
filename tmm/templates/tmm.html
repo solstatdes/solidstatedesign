@@ -79,6 +79,7 @@
                     type="range"
                     max="1000"                  // default 100
                     step="1"                   // default 1
+                    style="display:none";
                 >
             <div>
             </div>
@@ -123,6 +124,7 @@
     <script>
     //initiate
     var library = parseJSON("{{library}}");
+    var hideFlag=true;
 
 
     var html  = parseLibrary(library);

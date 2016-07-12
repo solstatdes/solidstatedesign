@@ -261,6 +261,7 @@ $('body').on("click", "", function() {
     layerId = null;
     listStack(project.config);
     $('.stack-func').hide();
+
 });
 $(function() {
 //add layer listenter
@@ -455,13 +456,15 @@ $(function() {
 
 });
 
-$('input[name=Slider]').on("change mousemove", function() {
+// Slider Listener
+$('input[name=Slider]').on("change mousemove", function(event) {
     d = $(this).val();
     project.config.stack[layerId].d = $(this).val();
     //project.M[layerId] = project.matrixElement(layerId);
     project.matrixBuild();
     plotTR(project.calcStack(), 'TR', 'out-page-chart');
     listStack(project.config);
+    hideFlat=false;
 });
 
 function incSlider(dir, inc) {
