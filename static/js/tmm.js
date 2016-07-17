@@ -183,7 +183,7 @@ function listStack (config) {
         var dup = "<a class='dup-layer film-operation' id='dup-layer-"+item+"'>copy</a>";
 
         var layer = config.stack[item];
-        $('#stack').prepend("<li class='layer "+highlight+"' id='layer"+item+"'>"+layer.layer+", "+layer.d+" </li>");//- "+up+" "+down+" "+dup+"  <a class='delete-layer film-operation' id='delete-layer-"+item+"'>delete</a></li>")// | <a class='up-layer'>up</a> | <a class='down-layer'>down</a></li>");
+        $('#stack').prepend("<li class='layer "+highlight+"' id='layer"+item+"'>"+layer.layer+", "+layer.d+" nm </li>");//- "+up+" "+down+" "+dup+"  <a class='delete-layer film-operation' id='delete-layer-"+item+"'>delete</a></li>")// | <a class='up-layer'>up</a> | <a class='down-layer'>down</a></li>");
     };
 };
 
