@@ -30,6 +30,9 @@ def get_name(stack, path):
     else:
         return None
 
+def homeOptics(request):
+    return render(request, 'optic-home.html', {})
+
 def home(request):
     projects = Project.objects.all()
     project = projects[0]
@@ -44,7 +47,7 @@ def home(request):
 
     project.json = json.dumps(project.json)
     library = json.dumps(library)
-    return render(request, 'tmm.html', {'project': project, 'form':SaveForm(), 'library':library, 'N':json.dumps(new_stack.N)})
+    return render(request, 'optic-app.html', {'project': project, 'form':SaveForm(), 'library':library, 'N':json.dumps(new_stack.N)})
 
 def add_layer(request):
     if request.method == 'POST':

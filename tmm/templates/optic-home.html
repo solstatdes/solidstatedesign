@@ -1,0 +1,30 @@
+{% extends "tmm-base.html" %}
+{% load static %}
+
+{% block navbar %}
+{% endblock %}
+{% block footer %}
+<div style="text-align: center">
+    <a href="/"><img style="max-width:100px; width: 100%;" src="{% static 'images/other_images/ss_logo.png' %}"></a>
+</div>
+{% endblock %}
+
+{% block content %}
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{% static 'images/other_images/filmstack.jpg' %}">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+                <section class="feature-text">
+                    <h1>Calculate T and R in your browser</h1>
+                  <p>Build a stack of thin-films and determine it's opitcal response using the transfer matrix method.</p>
+                  <p><a href="app" class="link-scroll btn btn-outline-inverse btn-lg">try the prototype</a></p>
+                  <br/>
+                  <br/>
+                </section>
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+
+{% endblock %}

@@ -1,31 +1,46 @@
-{% extends "tmm-base.html" %}
+{% extends "skylark-base.html" %}
 {% load static %}
 
 {% block navbar %}
-{% endblock %}
-{% block footer %}
-<div style="text-align: center">
-    <img style="max-width:100px; width: 100%;" src="{% static 'images/other_images/ss_logo.png' %}">
-</div>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/optics">
+                <p>SSD | Optics</p>
+            </a> 
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#stack-box">stack</a>
+                </li>
+                <li>
+                    <a href="#library-box">library</a>
+                </li>
+                <li>
+                    <a href="#feedback-box">feedback</a>
+                </li>
+                <li>
+                    <a href="#tutorial">tutorial</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 {% endblock %}
 
 {% block content %}
-        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{% static 'images/other_images/filmstack.jpg' %}">
-          <div class="content-wrapper clearfix">
-            <div class="col-sm-10 col-md-10 pull-right">
-
-                <section class="feature-text">
-                    <h1>Calculate T and R in your browser</h1>
-                  <p>Build a stack of thin-films and determine it's opitcal response using the transfer matrix method.</p>
-                  <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">try the prototype</a></p>
-                  <br/>
-                </section>
-
-            </div><!-- .col-sm-10 -->
-          </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
-
-
 <div class="container" id="stack-box">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
@@ -101,7 +116,7 @@
 </div>
 
 <div class="container">
-    <div class="row" id="feedback">
+    <div class="row" id="tutorial">
         <div class="col-lg-10 col-lg-offset-1">
             <div class="col-md-6 video-container">
                 <iframe width="640px" height="480px" src="https://www.youtube.com/embed/u0N2HlkH5a8?rel=0" frameborder="0" allowfullscreen></iframe>    
