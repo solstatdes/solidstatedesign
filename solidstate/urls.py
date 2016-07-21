@@ -5,4 +5,5 @@ urlpatterns = patterns('',
     url(r'^$', 'solidstate.views.home', name='home'),
     url(r'^optics/', include('tmm.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^idea/accounts/', include('allauth.urls'))
 )
