@@ -53,5 +53,9 @@
       + Renormalisation
       + carrier dependent effective mass
     - combine with Tauc plot app?
+  + Words that I wake to
+    - app that allows you to input first words heard on the radio
+    - time correlated
+    - auto gen wordclouds
   
     

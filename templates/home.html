@@ -92,7 +92,7 @@
                 <h1 class="section-title">About</h1>
 
                 <p class="feature-paragraph"><strong>Solid State Design</strong> is Dr. Rob Treharne. A working physicist with an eye for design and a thirst for code. </p>
-                <p>Rob has a PhD in Renewable Energy and a background in Photovoltaics. He founded Solid State Design this year and is on the hunt for interesting and technical web projects that will further hone  his skills and portfolio.</p>
+                <p>Rob has a PhD in Renewable Energy and a background in Photovoltaics. He founded Solid State Design this year and is on the hunt for interesting and technical web projects that will further hone  his skills and portfolio. He also loves graphic design and is great at designing logos.</p>
             </div><!-- .col-sm-10 -->
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
@@ -107,6 +107,54 @@
               
                 <!-- feature columns -->
                 <section class="feature-columns row clearfix">
+                  <!-- feature 3 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="{% static 'images/other_images/10things.png' %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                      </div>
+                      <div class="caption">
+                        <h5>Graphic Design</h5>
+                        <p>Nothing beats a good logo. Here are a few that were designed by Solid State.</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-8">
+                      <h1>Graphic Design</h1>
+                      <p>I love designing logos. To me, there is nothing more satisying than a simple but elegant logo. Here are a few recent examples.</p>
+                      <!-- image slider inside popup -->
+                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <img class="lazyOwl" data-src="{% static 'images/other_images/miatamodz.png' %}">
+                          <p>This logo was for the car modification specialist <a href="http://miatamodz.com" target="_blank">MiataModz</a>. Most of my logos are pretty clean cut, but I loved the opportunity here to do something a bit gritty.</p>
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <img class="lazyOwl" data-src="{% static 'images/other_images/10things.png' %}">
+                          <p><a href="http://andanothertenthings.wordpress.com" target="_blank">And Another Ten Things</a>. This logo was for a great blog site about parenting.</p>
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-1.jpg' %}">
+                          <p><a href="http://www.rsasolarchallenge.org" target="_blank">RSA Solar Challenge</a>. This one looks great on a grey background and is perfect for round badges and stickers.</p>
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-2.jpg' %}">
+                          <p>Logo for <a href="http://www.cdt-pv.org" target="_blank">CDT-PV</a>. This one has been particularly popular - as well as the cdt-pv.org website, this logo has been used it on mugs, T-shirts, pens, pads, banners and posters. It is well known around the University of Liverpool campus.</p>
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-3.jpg' %}">
+                          <p>Sometimes you just want simple. This one took just over an hour to get right.</p>
+                        </div>
+                      </div>
+                    </div><!-- #modal-content-7 -->
+                  </article>
 
                   <!-- feature 1 -->
                   <article class="feature-col col-md-4">
@@ -185,42 +233,6 @@
                   </article>
 
 
-                  <!-- feature 3 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="{% static 'images/other_images/solar-challenge.jpg' %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>Graphic Design</h5>
-                        <p>Nothing beats a good logo. Here are a few that were designed by Solid State.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
-
-                    <div class="content-to-populate-in-modal" id="modal-content-8">
-                      <h1>Graphic Design</h1>
-                      <p>I love designing logos. To me, there is nothing more satisying than a simple but elegant logo. Here are a few recent examples.</p>
-                      <!-- image slider inside popup -->
-                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                        <!-- slide -->
-                        <div>
-                          <!-- caption is optional. To remove it, remove the <h6> below -->
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-1.jpg' %}">
-                          <p><a href="http://www.rsasolarchallenge.org" target="_blank">RSA Solar Challenge</a>. This one looks great on a grey background and is perfect for round badges and stickers.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-2.jpg' %}">
-                          <p>Logo for <a href="http://www.cdt-pv.org" target="_blank">CDT-PV</a>. This one has been particularly popular - as well as the cdt-pv.org website, this logo has been used it on mugs, T-shirts, pens, pads, banners and posters. It is well known around the University of Liverpool campus.</p>
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <img class="lazyOwl" data-src="{% static 'images/other_images/gd-3.jpg' %}">
-                          <p>Sometimes you just want simple. This one took just over an hour to get right.</p>
-                        </div>
-                      </div>
-                    </div><!-- #modal-content-7 -->
-                  </article>
 
 
                 </section><!-- end: .feature-columns -->
@@ -235,7 +247,7 @@
           <div class="content-wrapper clearfix">
             
               <h1 class="section-title">Contact</h1>
-                <p class="feature-paragraph">So, interested in making an awesome site? Let's talk. </p>
+                <p class="feature-paragraph">So, interested in making an awesome logo or webapp? Let's talk. </p>
               
                 <!-- CONTACT DETAILS -->
                 <strong>
